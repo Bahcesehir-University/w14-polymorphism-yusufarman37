@@ -38,7 +38,7 @@ public:
    Circle(double r) : Shape("Circle"), radius(r) {}
    // TODO 3: Override area().  Area of a circle = PI * r * r.
    double area() const override {
-       return M_PI * radius * radius;
+       return 3.14 * radius * radius;
    }
 };
 // --- Derived class: Rectangle -----------------------------------
@@ -102,7 +102,7 @@ int main() {
        std::cout << s->describe() << std::endl;
    }
    std::cout << "Total area: " << totalArea(shapes) << std::endl;
-   std::cout << "Largest:    " << largestShapeName(shapes) << std::endl
+   std::cout << "Largest:    " << largestShapeName(shapes) << std::endl;
    for (Shape* s : shapes) delete s;
    return 0;
 }
